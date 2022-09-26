@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Social Media Prototype - Front-End</title>
+		<!-- fonts -->
+		<link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+		<!-- css -->
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<!-- navbar start -->
+		<nav>
+			<div class="container">
+				<div class="navbar">
+					<div class="navbar-brand">
+						<a href="">Logo</a>
+					</div>
+					<div class="navbar-form">
+						<form action="">
+							<input type="text" placeholder="Search" id="search" />
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</form>
+					</div>
+
+					<ul class="navbar-menus">
+						<li class="menu-items">
+							<a href="#" class="nav-links active"><i class="fa-solid fa-house"></i></a>
+						</li>
+						<li class="menu-items">
+							<a href="#" class="nav-links"><i class="fa-solid fa-users"></i></a>
+						</li>
+						<li class="menu-items">
+							<a href="#" class="nav-links"><i class="fa-regular fa-bell"></i></a>
+						</li>
+						<li class="menu-items">
+							<a href="#" class="nav-links"><i class="fa-regular fa-comment-dots"></i></a>
+						</li>
+						<li class="menu-items">
+							<a href="#" class="nav-links logged-in-user"><i class="fa-solid fa-user"></i> John Doe</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- navbar end -->
+
+		<!-- content start -->
+		<section class="content-area">
+			<div class="container">
+				<div class="content">
+					<!-- left side content start-->
+					<div class="left-content-area">
+						<div class="left-content">
+							<div class="explore card">
+								<h3 class="card-title">Explore</h3>
+								<ul class="explore-links">
+									<li>
+										<a href=""><i class="fa-regular fa-floppy-disk"></i> Saved Posts</a>
+									</li>
+									<li>
+										<a href=""><i class="fa-regular fa-user"></i> People</a>
+									</li>
+									<li>
+										<a href=""><i class="fa-solid fa-user-group"></i> Groups</a>
+									</li>
+									<li>
+										<a href=""><i class="fa-solid fa-pager"></i> Pages</a>
+									</li>
+									<li>
+										<a href=""><i class="fa-regular fa-calendar"></i> Events</a>
+									</li>
+								</ul>
+							</div>
+							<div class="download card">
+								<h3 class="card-title">Download App</h3>
+								<div class="img">
+									<a href=""><img src="./assets/img/playstore.png" alt="" /></a>
+									<a href=""><img src="./assets/img/appstore.png" alt="" /></a>
+								</div>
+							</div>
+							<div class="suggested card">
+								<h3 class="card-title">Suggested People</h3>
+								<div class="user">
+									<div class="profile-card">
+										<img src="./assets/img/user.jpg" class="profile-pic" alt="" />
+										<a href="" class="username">Ariana Jones</a>
+									</div>
+									<div class="add-button">
+										<a href="">Add <i class="fa-solid fa-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- left side content end-->
+
+					<!-- right side content start-->
+					<div class="right-content-area">
+						<div class="might-like card">
+							<h3 class="card-title">You might like</h3>
+							<div class="user">
+								<div class="profile-card">
+									<img src="./assets/img/user.jpg" class="profile-pic" alt="" />
+									<a href="" class="username">Ariana Jones</a>
+								</div>
+								<div class="follow-button">
+									<a href="">Ignore</a>
+									<a href="">Follow</a>
+								</div>
+							</div>
+						</div>
+						<div class="find-friend card">
+							<h3 class="card-title">Find Your Friends</h3>
+							<form action="">
+								<input type="text" name="search" placeholder="" id="find-search" />
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</form>
+							<div class="profile-card">
+								<img src="./assets/img/user.jpg" class="profile-pic" alt="" />
+								<a href="" class="username">Ariana Jones</a>
+							</div>
+							<div class="profile-card">
+								<img src="./assets/img/user2.jpg" class="profile-pic" alt="" />
+								<a href="" class="username">Shawn Mendes</a>
+							</div>
+							<div class="profile-card">
+								<img src="./assets/img/user3.jpg" class="profile-pic" alt="" />
+								<a href="" class="username">Shadman Sakib</a>
+							</div>
+						</div>
+					</div>
+					<!-- right side content end-->
+
+					<!-- middle timeline area start-->
+					<div class="main-content-area">
+						<!-- Stories -->
+						<div class="stories">
+							<div class="single-story">
+								<img src="./assets/img/default-avatar.jpg" alt="" />
+								<div class="overlay">
+									<a href=""><i class="fa-solid fa-plus"></i></a>
+									<h3>Add Story</h3>
+								</div>
+							</div>
+							<div class="single-story">
+								<div class="overlay">
+									<a href="#" class="nav-links logged-in-user"><i class="fa-solid fa-user"></i></a>
+									<a href="">Hossain Sany</a>
+								</div>
+							</div>
+							<div class="single-story">
+								<div class="overlay">
+									<a href="#" class="nav-links logged-in-user"><i class="fa-solid fa-user"></i></a>
+									<a href="">Ed Sheeran</a>
+								</div>
+							</div>
+							<div class="single-story">
+								<div class="overlay">
+									<a href="#" class="nav-links logged-in-user"><i class="fa-solid fa-user"></i></a>
+									<a href="">Selena Gomez</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- create new posts -->
+						<div class="create-post main-card">
+							<div class="profile-card">
+								<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+								<form action="">
+									<input type="text" placeholder="Create a post..." id="createPost" />
+								</form>
+							</div>
+							<div class="post-options">
+								<a href=""><i class="fa-solid fa-circle-half-stroke"></i> Background</a>
+								<a href=""><i class="fa-solid fa-camera"></i> Photo/Video</a>
+								<a href=""><i class="fa-regular fa-face-smile"></i> Feeling/Activity</a>
+							</div>
+						</div>
+
+						<!-- timeline preference -->
+						<div class="post-preference main-card">
+							<h3>Public Post:</h3>
+							<p>Friend Posts</p>
+						</div>
+
+						<!-- all posts -->
+						<div class="posts">
+							<!-- single post start -->
+							<div class="single-post">
+								<div class="post-top">
+									<div class="post-author">
+										<img src="./assets/img/default-avatar.jpg" alt="" />
+										<div class="author-details">
+											<a href="" class="name">Hossain Sany</a>
+											<p>1 hour ago</p>
+										</div>
+									</div>
+									<div class="post-dropdown">
+										<i class="fa-solid fa-chevron-down post-dropdown-icon"></i>
+										<div class="post-overlay card">
+											<ul class="">
+												<li>
+													<a href=""><i class="fa-solid fa-bookmark"></i> Save Post</a>
+												</li>
+												<li>
+													<a href=""><i class="fa-solid fa-flag"></i> Report Post</a>
+												</li>
+												<li>
+													<a href=""><i class="fa-solid fa-pencil"></i> Edit Post</a>
+												</li>
+												<li>
+													<a href=""><i class="fa-solid fa-trash"></i> Delete Post</a>
+												</li>
+												<li>
+													<a href=""><i class="fa-solid fa-link"></i> Open in new tab</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="post-content">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum, eligendi possimus voluptatem reiciendis
+										praesentium exercitationem, dolorum corporis similique aut corrupti, laborum optio expedita est aperiam.
+										Corrupti delectus amet fuga aliquid corporis cum tempore, iure pariatur recusandae, vero excepturi eligendi!
+										Iure similique repellat consectetur, magnam fugit natus eum pariatur eveniet!
+									</p>
+								</div>
+								<div class="post-interactions">
+									<div class="interaction-count"></div>
+									<div class="interaction-icons">
+										<div class="like">
+											<a href=""><i class="fa-regular fa-thumbs-up"></i> Like</a>
+										</div>
+										<div class="comment">
+											<a href=""><i class="fa-regular fa-comment"></i> Comment</a>
+										</div>
+										<div class="share">
+											<a href=""><i class="fa-regular fa-share-from-square"></i> Share</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- single post end -->
+
+						<!-- single post start -->
+						<div class="single-post">
+							<div class="post-top">
+								<div class="post-author">
+									<img src="./assets/img/default-avatar.jpg" alt="" />
+									<div class="author-details">
+										<a href="" class="name">Hossain Sany</a>
+										<p>1 hour ago</p>
+									</div>
+								</div>
+								<div class="post-dropdown">
+									<i class="fa-solid fa-chevron-down post-dropdown-icon"></i>
+									<div class="post-overlay card">
+										<ul class="">
+											<li>
+												<a href=""><i class="fa-solid fa-bookmark"></i> Save Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-flag"></i> Report Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-pencil"></i> Edit Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-trash"></i> Delete Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-link"></i> Open in new tab</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="post-content">
+								<p>Your favourite game?</p>
+								<form action="" class="post-poll">
+									<div class="single-option">
+										<div class="option">
+											<input type="radio" name="poll-radio" id="option-1" />
+											<label for="option-1"><span class="added-by">Added by You</span><br />Football</label>
+										</div>
+										<div class="votes">
+											<img src="./assets/img/default-avatar.jpg" alt="" />
+											<p>1 Vote</p>
+										</div>
+										<div class="close-btn">
+											<a href=""><i class="fa-solid fa-x"></i></a>
+										</div>
+									</div>
+									<div class="single-option">
+										<div class="option">
+											<input type="radio" name="poll-radio" id="option-2" />
+											<label for="option-2"><span class="added-by">Added by You</span><br />Cricket</label>
+										</div>
+										<div class="close-btn">
+											<a href=""><i class="fa-solid fa-x"></i></a>
+										</div>
+									</div>
+									<div class="single-option">
+										<div class="option">
+											<input type="radio" name="poll-radio" id="option-3" />
+											<label for="option-3"><span class="added-by">Added by You</span><br />Something Else</label>
+										</div>
+										<div class="close-btn">
+											<a href=""><i class="fa-solid fa-x"></i></a>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="post-interactions">
+								<div class="interaction-count">
+									<div class="like-count">
+										<i class="fa-solid fa-thumbs-up"></i>
+										<a href="">You and 1 others</a>
+									</div>
+									<div class="comment-count">
+										<p>1 comments</p>
+									</div>
+								</div>
+								<div class="interaction-icons">
+									<div class="like">
+										<a href=""><i class="fa-regular fa-thumbs-up"></i> Like</a>
+									</div>
+									<div class="comment">
+										<a href=""><i class="fa-regular fa-comment"></i> Comment</a>
+									</div>
+									<div class="share">
+										<a href=""><i class="fa-regular fa-share-from-square"></i> Share</a>
+									</div>
+								</div>
+							</div>
+							<div class="post-comments">
+								<div class="profile-card">
+									<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+									<div class="icons">
+										<a href="" class="username"><i class="fa-solid fa-face-smile"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-paperclip"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-video"></i></a>
+									</div>
+									<form action="">
+										<input type="text" placeholder="Write a comment..." name="comment" />
+									</form>
+								</div>
+								<div class="single-comment">
+									<div class="top">
+										<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+										<div class="comment-content">
+											<a href="" class="username">Hossain Sany</a>
+											<img src="./assets/img/story1.jpg" alt="" />
+										</div>
+									</div>
+									<div class="comment-interactions">
+										<a href="">Like</a>
+										<a href="">Reply</a>
+										<div class="dot"></div>
+										<span>1 hour ago</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- single post end -->
+
+						<!-- single post start -->
+						<div class="single-post">
+							<div class="post-top">
+								<div class="post-author">
+									<img src="./assets/img/default-avatar.jpg" alt="" />
+									<div class="author-details">
+										<a href="" class="name">Hossain Sany</a>
+										<p>1 hour ago</p>
+									</div>
+								</div>
+								<div class="post-dropdown">
+									<i class="fa-solid fa-chevron-down post-dropdown-icon"></i>
+									<div class="post-overlay card">
+										<ul class="">
+											<li>
+												<a href=""><i class="fa-solid fa-bookmark"></i> Save Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-flag"></i> Report Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-pencil"></i> Edit Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-trash"></i> Delete Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-link"></i> Open in new tab</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="post-content">
+								<img src="./assets/img/story3.jpg" alt="" />
+							</div>
+							<div class="post-interactions">
+								<div class="interaction-count">
+									<div class="like-count">
+										<i class="fa-solid fa-thumbs-up"></i>
+										<a href="">You and 2 others</a>
+									</div>
+									<div class="comment-count">
+										<p>2 comments</p>
+									</div>
+								</div>
+								<div class="interaction-icons">
+									<div class="like">
+										<a href=""><i class="fa-regular fa-thumbs-up"></i> Like</a>
+									</div>
+									<div class="comment">
+										<a href=""><i class="fa-regular fa-comment"></i> Comment</a>
+									</div>
+									<div class="share">
+										<a href=""><i class="fa-regular fa-share-from-square"></i> Share</a>
+									</div>
+								</div>
+							</div>
+							<div class="post-comments">
+								<div class="profile-card">
+									<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+									<div class="icons">
+										<a href="" class="username"><i class="fa-solid fa-face-smile"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-paperclip"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-video"></i></a>
+									</div>
+									<form action="">
+										<input type="text" placeholder="Write a comment..." name="comment" />
+									</form>
+								</div>
+								<div class="single-comment">
+									<div class="top">
+										<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+										<div class="comment-content">
+											<a href="" class="username">Hossain Sany</a>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt sint illum aperiam ullam iure
+												voluptatum soluta minima eligendi dignissimos?
+											</p>
+										</div>
+									</div>
+									<div class="comment-interactions">
+										<a href="">Like</a>
+										<a href="">Reply</a>
+										<div class="dot"></div>
+										<span>1 hour ago</span>
+									</div>
+								</div>
+								<div class="comment-reply">
+									<div class="top">
+										<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+										<div class="comment-content">
+											<a href="" class="username">Someone Else</a>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt sint illum aperiam ullam iure
+												voluptatum soluta minima eligendi dignissimos?
+											</p>
+										</div>
+									</div>
+									<div class="comment-interactions">
+										<a href="">Like</a>
+										<a href="">Reply</a>
+										<div class="dot"></div>
+										<span>1 hour ago</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- single post end -->
+
+						<!-- single post start -->
+						<div class="single-post">
+							<div class="post-top">
+								<div class="post-author">
+									<img src="./assets/img/default-avatar.jpg" alt="" />
+									<div class="author-details">
+										<a href="" class="name">Hossain Sany</a>
+										<p>1 hour ago</p>
+									</div>
+								</div>
+								<div class="post-dropdown">
+									<i class="fa-solid fa-chevron-down post-dropdown-icon"></i>
+									<div class="post-overlay card">
+										<ul class="">
+											<li>
+												<a href=""><i class="fa-solid fa-bookmark"></i> Save Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-flag"></i> Report Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-pencil"></i> Edit Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-trash"></i> Delete Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-link"></i> Open in new tab</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- post content -->
+							<div class="post-content">
+								<div class="image-gallery">
+									<div class="single-image">
+										<img src="./assets/img/story1.jpg" alt="" />
+									</div>
+									<div class="single-image">
+										<img src="./assets/img/story2.jpg" alt="" />
+									</div>
+									<div class="single-image">
+										<img src="./assets/img/story3.jpg" alt="" />
+									</div>
+									<div class="single-image">
+										<img src="./assets/img/user.jpg" alt="" />
+									</div>
+									<div class="single-image">
+										<img src="./assets/img/user2.jpg" alt="" />
+										<div class="overlay">+1</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- like-comment buttons -->
+							<div class="post-interactions">
+								<div class="interaction-count">
+									<div class="like-count">
+										<i class="fa-solid fa-thumbs-up"></i>
+										<a href="">You and 2 others</a>
+									</div>
+									<div class="comment-count">
+										<p>1 comments</p>
+									</div>
+								</div>
+								<div class="interaction-icons">
+									<div class="like">
+										<a href=""><i class="fa-regular fa-thumbs-up"></i> Like</a>
+									</div>
+									<div class="comment">
+										<a href=""><i class="fa-regular fa-comment"></i> Comment</a>
+									</div>
+									<div class="share">
+										<a href=""><i class="fa-regular fa-share-from-square"></i> Share</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- comments -->
+							<div class="post-comments">
+								<div class="profile-card">
+									<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+									<div class="icons">
+										<a href="" class="username"><i class="fa-solid fa-face-smile"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-paperclip"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-video"></i></a>
+									</div>
+									<form action="">
+										<input type="text" placeholder="Write a comment..." name="comment" />
+									</form>
+								</div>
+								<div class="single-comment">
+									<div class="top">
+										<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+										<div class="comment-content">
+											<a href="" class="username">Hossain Sany</a>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt sint illum aperiam ullam iure
+												voluptatum soluta minima eligendi dignissimos?
+											</p>
+										</div>
+									</div>
+									<div class="comment-interactions">
+										<a href="">Like</a>
+										<a href="">Reply</a>
+										<div class="dot"></div>
+										<span>1 hour ago</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- single post end -->
+
+						<!-- single post start -->
+						<div class="single-post">
+							<div class="post-top">
+								<div class="post-author">
+									<img src="./assets/img/default-avatar.jpg" alt="" />
+									<div class="author-details">
+										<a href="" class="name">Hossain Sany</a>
+										<p>1 hour ago</p>
+									</div>
+								</div>
+								<div class="post-dropdown">
+									<i class="fa-solid fa-chevron-down post-dropdown-icon"></i>
+									<div class="post-overlay card">
+										<ul class="">
+											<li>
+												<a href=""><i class="fa-solid fa-bookmark"></i> Save Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-flag"></i> Report Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-pencil"></i> Edit Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-trash"></i> Delete Post</a>
+											</li>
+											<li>
+												<a href=""><i class="fa-solid fa-link"></i> Open in new tab</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- post content -->
+							<div class="post-content">
+								<div class="text-with-image">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aperiam quae voluptatum sint perferendis
+										nemo quod debitis! Iste, vero aperiam.
+									</p>
+									<img src="./assets/img/user3.jpg" alt="" />
+								</div>
+							</div>
+
+							<!-- like-comment buttons -->
+							<div class="post-interactions">
+								<div class="interaction-count">
+									<div class="like-count">
+										<i class="fa-solid fa-thumbs-up"></i>
+										<a href="">You and 2 others</a>
+									</div>
+									<div class="comment-count">
+										<p>1 comments</p>
+									</div>
+								</div>
+								<div class="interaction-icons">
+									<div class="like">
+										<a href=""><i class="fa-regular fa-thumbs-up"></i> Like</a>
+									</div>
+									<div class="comment">
+										<a href=""><i class="fa-regular fa-comment"></i> Comment</a>
+									</div>
+									<div class="share">
+										<a href=""><i class="fa-regular fa-share-from-square"></i> Share</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- comments -->
+							<div class="post-comments">
+								<div class="profile-card">
+									<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+									<div class="icons">
+										<a href="" class="username"><i class="fa-solid fa-face-smile"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-paperclip"></i></a>
+										<a href="" class="username"><i class="fa-solid fa-video"></i></a>
+									</div>
+									<form action="">
+										<input type="text" placeholder="Write a comment..." name="comment" />
+									</form>
+								</div>
+								<div class="single-comment">
+									<div class="top">
+										<img src="./assets/img/default-avatar.jpg" class="profile-pic" alt="" />
+										<div class="comment-content">
+											<a href="" class="username">Hossain Sany</a>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt sint illum aperiam ullam iure
+												voluptatum soluta minima eligendi dignissimos?
+											</p>
+										</div>
+									</div>
+									<div class="comment-interactions">
+										<a href="">Like</a>
+										<a href="">Reply</a>
+										<div class="dot"></div>
+										<span>1 hour ago</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- single post end -->
+					</div>
+				</div>
+			</div>
+			<!-- middle timeline area end-->
+		</section>
+
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>
